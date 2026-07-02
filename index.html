@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mulanga Madzimbalala — Software Developer & Designer</title>
+<meta name="description" content="Flutter Developer, Full-Stack Engineer & Graphic Designer based in South Africa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<noscript>
+  <style>#preloader{display:none !important;} .bcard{opacity:1 !important; transform:none !important;}</style>
+</noscript>
+
+<!-- ═══════════════ PRELOADER ═══════════════ -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div class="preloader-grid">
+      <span class="pg pg-purple"></span>
+      <span class="pg pg-black"></span>
+      <span class="pg pg-yellow"></span>
+      <span class="pg pg-teal"></span>
+    </div>
+    <span class="preloader-logo">Mulanga<em>.</em></span>
+  </div>
+</div>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav id="navbar">
+ 
+  <!-- LEFT SIDE: logo + social icons -->
+  <div class="nav-left">
+ 
+    <a href="#hero" class="nav-logo">Mulanga<em>.</em></a>
+ 
+    <!-- Social icon row — sits right next to the logo -->
+    <div class="nav-socials">
+ 
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/mulanga-madzimbalala-a462a0242"
+         class="nav-social-link"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+ 
+      <!-- GitHub -->
+      <a href="https://github.com/cyerMadzi"
+         class="nav-social-link"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+ 
+      <!-- WhatsApp
+           ─────────────────────────────────────────────────
+           Replace 27817622557 with your number in
+           international format (no + or spaces).
+           The pre-filled message is optional — remove the
+           ?text=... part if you don't want one.
+           ─────────────────────────────────────────────────  -->
+      <a href="https://wa.me/27817622557?text=Hi%20Mulanga%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+         class="nav-social-link"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+ 
+      <!-- Email -->
+      <a href="mailto:Obvmulanga@gmail.com"
+         class="nav-social-link"
+         aria-label="Send email">
+        <i class="fa fa-envelope"></i>
+      </a>
+ 
+    </div><!-- end .nav-socials -->
+ 
+  </div><!-- end .nav-left -->
+ 
+  <!-- RIGHT SIDE: nav links (unchanged) -->
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+ 
+  <!-- Hamburger — unchanged -->
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+    <i class="fa fa-bars"></i>
+  </button>
+ 
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about"        onclick="closeMobile()">About</a>
+  <a href="#experience"   onclick="closeMobile()">Experience</a>
+  <a href="#projects"     onclick="closeMobile()">Projects</a>
+  <a href="#skills"       onclick="closeMobile()">Skills</a>
+  <a href="#certificates" onclick="closeMobile()">Certs</a>
+  <a href="#services"     onclick="closeMobile()">Services</a>
+  <a href="#contact"      onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="bento-hero">
+
+    <!-- A: Profile card (purple left column) -->
+    <div class="bcard bcard-a">
+      <div class="bcard-a-photo">
+        <!--
+          YOUR PROFILE PHOTO
+          ─────────────────────────────────────
+          The <img> below already points to your photo.
+          If you move the file, update the src path here.
+          Recommended: square crop, face centred, min 600×600px
+        -->
+        <img src="Assets/mypic.jpeg" alt="Mulanga Madzimbalala">
+      </div>
+      <div class="bcard-a-badge"><span class="dot"></span> Available for work</div>
+      <div class="bcard-a-label">I'm,</div>
+      <div class="bcard-a-name">Mulanga<br>Madzimbalala</div>
+      <a href="mailto:Obvmulanga@gmail.com" class="bcard-a-email">
+        <i class="fa fa-envelope" style="font-size:0.7rem;"></i>
+        Obvmulanga@gmail.com
+      </a>
+    </div>
+
+    <!-- B: Big headline -->
+    <div class="bcard bcard-b">
+      <div class="bcard-b-inner">
+        <div class="bcard-b-tag">Flutter Dev · Full-Stack · Graphic Designer</div>
+        <h1 class="bcard-b-title">Building apps<br>that <em>actually</em><br>work.</h1>
+        <p class="bcard-b-desc">Junior Software Developer. BSc Computer Science &amp; Mathematics at UNISA. South Africa.</p>
+      </div>
+    </div>
+
+    <!-- C: Yellow stats column -->
+    <div class="bcard bcard-c">
+      <div class="stat-block">
+        <span class="stat-n">6+</span>
+        <span class="stat-l">Projects</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-n">3</span>
+        <span class="stat-l">Certifications</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-n">4+</span>
+        <span class="stat-l">Years Design</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-n">2</span>
+        <span class="stat-l">Live Platforms</span>
+      </div>
+    </div>
+
+    <!-- D: Dark CTA card -->
+    <div class="bcard bcard-d">
+      <div class="bcard-d-label">Quick Actions</div>
+      <div class="bcard-d-btns">
+        <a href="#projects" class="bcard-d-btn btn-purple">
+          View Projects <i class="fa fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="bcard-d-btn btn-ghost">
+          Get In Touch <i class="fa fa-paper-plane"></i>
+        </a>
+        <!--
+          CV DOWNLOAD BUTTON
+          ──────────────────
+          Change href to the path of your CV PDF file.
+          e.g.  href="Assets/Mulanga_CV.pdf"
+        -->
+        <a href="Assets/Mulanga_Madzimbalala_CV.pdf" class="bcard-d-btn btn-ghost" download>
+          Download CV <i class="fa fa-download"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- E: Teal specialties chips -->
+    <div class="bcard bcard-e">
+      <div class="bcard-e-label">Specialties</div>
+      <div class="role-chips">
+        <span class="role-chip">Flutter</span>
+        <span class="role-chip">Dart</span>
+        <span class="role-chip">Firebase</span>
+        <span class="role-chip">JavaScript</span>
+        <span class="role-chip">Python</span>
+        <span class="role-chip">Java</span>
+        <span class="role-chip">HTML</span>
+        <span class="role-chip">CSS</span>
+        <span class="role-chip">C++</span>
+        <span class="role-chip">UI/UX Design</span>
+        <span class="role-chip">Stripe API</span>
+        <span class="role-chip">SQL</span>
+        <span class="role-chip">SQLite</span>
+        <span class="role-chip">Git &amp; GitHub</span>
+        <span class="role-chip">Photoshop</span>
+      </div>
+    </div>
+
+    <!-- F: Bottom location bar -->
+    <div class="bcard bcard-f">
+      <div class="bcard-f-loc">
+        <i class="fa fa-location-dot"></i>
+        Benoni, Gauteng · South Africa
+      </div>
+      <div class="bcard-f-scroll">
+        Scroll to explore <i class="fa fa-chevron-down"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:3rem;">
+      <div class="eyebrow reveal">About</div>
+      <h2 class="display-title reveal rd1">The person <em>behind</em><br>the code.</h2>
+    </div>
+    <div class="about-bento">
+
+      <!-- Intro text -->
+      <div class="ab-card ab-intro reveal">
+        <h3>I'm a Junior Developer who builds <em>real</em> software — not tutorials.</h3>
+        <p>Currently in my second year of a BSc in Computer Science and Mathematics at UNISA. I specialise in <strong>cross-platform mobile development with Flutter</strong>, building full-stack platforms that include booking systems, marketplace platforms, and inventory management software.</p>
+        <p>I've led a development team, shipped products used by real businesses, and integrated live payment systems. Alongside coding I run Mulanga Productions — a creative design brand — and serve on my church's media team. Currently expanding into data science through ALX Africa.</p>
+      </div>
+
+      <!-- Work collage / photo grid -->
+      <div class="ab-card ab-photo reveal rd1">
+        <div class="ab-collage-label">A peek at the work</div>
+        <div class="ab-collage-grid">
+          <div class="ab-collage-tile tile-purple">
+            <!--
+              COLLAGE IMAGE 1 — Code screenshot
+              Replace src with your own image or remove <img>
+              to show the icon placeholder instead.
+            -->
+            <img src="Assets/code.jpg" alt="Code snippet">
+            <div class="ab-collage-ph"><i class="fa fa-code"></i></div>
+            <span class="ab-collage-cap">Code</span>
+          </div>
+          <div class="ab-collage-tile tile-teal">
+            <!-- COLLAGE IMAGE 2 — Website screenshot -->
+            <img src="Assets/website.jpg" alt="Website UI">
+            <div class="ab-collage-ph"><i class="fa fa-globe"></i></div>
+            <span class="ab-collage-cap">Websites</span>
+          </div>
+          <div class="ab-collage-tile tile-coral">
+            <!-- COLLAGE IMAGE 3 — App UI screenshot -->
+            <img src="Assets/phone.jpg" alt="App UI">
+            <div class="ab-collage-ph"><i class="fa fa-mobile-screen"></i></div>
+            <span class="ab-collage-cap">App UI</span>
+          </div>
+          <div class="ab-collage-tile tile-sand">
+            <!-- COLLAGE IMAGE 4 — Design work screenshot -->
+            <img src="Assets/webs.jpg" alt="Design work">
+            <div class="ab-collage-ph"><i class="fa fa-palette"></i></div>
+            <span class="ab-collage-cap">Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick facts -->
+      <div class="ab-card ab-facts reveal rd2">
+        <ul class="ab-facts-list">
+          <li><span class="ab-fact-k">Location</span>   <span class="ab-fact-v">Benoni, South Africa</span></li>
+          <li><span class="ab-fact-k">Degree</span>     <span class="ab-fact-v">BSc Comp Sci &amp; Maths</span></li>
+          <li><span class="ab-fact-k">Institution</span><span class="ab-fact-v">UNISA</span></li>
+          <li><span class="ab-fact-k">GitHub</span>     <span class="ab-fact-v">cyerMadzi</span></li>
+          <li><span class="ab-fact-k">Status</span>     <span class="ab-fact-v">Available for work</span></li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <div class="ab-card ab-edu reveal rd3">
+        <h4>Education</h4>
+        <ul class="edu-items">
+          <li>
+            <span>2024 – Present</span>
+            <strong>BSc Computer Science &amp; Mathematics</strong>
+            <p>University of South Africa (UNISA) · Second Year</p>
+          </li>
+          <li>
+            <span>2025 – Present</span>
+            <strong>Data Science Program</strong>
+            <p>ALX Africa · Data analysis &amp; statistical reasoning</p>
+          </li>
+          <li>
+            <span>2025</span>
+            <strong>Full Stack Development Certificate</strong>
+            <p>First National Bank App Academy · 6 Months</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     EXPERIENCE  (moved up — directly after About)
+═══════════════════════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:3rem;">
+      <div class="eyebrow reveal">Career</div>
+      <h2 class="display-title reveal rd1">Experience &amp; <em>journey.</em></h2>
+    </div>
+    <div class="exp-layout reveal">
+
+      <!-- Sidebar tab list -->
+      <div class="exp-tabs">
+        <div class="exp-tab active" onclick="switchExp('prexpiry',this)">
+          <div class="exp-tab-role">Lead Software Developer</div>
+          <div class="exp-tab-co">PreXpiry</div>
+        </div>
+        <div class="exp-tab" onclick="switchExp('epic',this)">
+          <div class="exp-tab-role">Remote Full-Stack Dev</div>
+          <div class="exp-tab-co">Epic Platform</div>
+        </div>
+        <div class="exp-tab" onclick="switchExp('freelance',this)">
+          <div class="exp-tab-role">Freelance Mobile Dev</div>
+          <div class="exp-tab-co">Self-employed</div>
+        </div>
+        <div class="exp-tab" onclick="switchExp('mulanga',this)">
+          <div class="exp-tab-role">Founder &amp; Creative Dir.</div>
+          <div class="exp-tab-co">Mulanga Productions</div>
+        </div>
+        <div class="exp-tab" onclick="switchExp('church',this)">
+          <div class="exp-tab-role">Media Team Member</div>
+          <div class="exp-tab-co">Church Media</div>
+        </div>
+        <div class="exp-tab" onclick="switchExp('data',this)">
+          <div class="exp-tab-role">Data Analyst (Vol.)</div>
+          <div class="exp-tab-co">Community Org.</div>
+        </div>
+      </div>
+
+      <!-- Panel content area -->
+      <div class="exp-panel-wrap">
+
+        <div class="exp-panel active" id="exp-prexpiry">
+          <div class="exp-panel-date">Aug 2025 – Feb 2026</div>
+          <div class="exp-panel-role">Lead Software Developer</div>
+          <div class="exp-panel-co">PreXpiry Pharmaceutical Solutions · Full-time</div>
+          <p class="exp-panel-desc">Chief Executive Developer and Lead Solutions Architect for a pharmaceutical inventory and medicine expiry management platform built for pharmacies and healthcare providers.</p>
+          <ul class="exp-bullets">
+            <li>Led a multidisciplinary team through the full software development lifecycle</li>
+            <li>Designed inventory modules, expiry tracking, and automated stock monitoring</li>
+            <li>Architected secure database structures for high-volume pharmaceutical operations</li>
+            <li>Integrated payment gateway workflows for pharmacy-to-supplier transactions</li>
+            <li>Managed technical decision-making, project coordination, and feature roadmaps</li>
+          </ul>
+        </div>
+
+        <div class="exp-panel" id="exp-epic">
+          <div class="exp-panel-date">Nov 2025 – Mar 2026</div>
+          <div class="exp-panel-role">Remote Full-Stack Web Developer</div>
+          <div class="exp-panel-co">Epic Restaurant Platform · Remote</div>
+          <p class="exp-panel-desc">Worked remotely on a web-based restaurant reservation and management platform, contributing across the full stack.</p>
+          <ul class="exp-bullets">
+            <li>Developed customer-facing reservation system and availability checking</li>
+            <li>Built restaurant administration panel for booking and customer management</li>
+            <li>Designed responsive UIs for desktop and mobile</li>
+            <li>Contributed to database architecture and backend processing</li>
+          </ul>
+        </div>
+
+        <div class="exp-panel" id="exp-freelance">
+          <div class="exp-panel-date">2024 – Present</div>
+          <div class="exp-panel-role">Freelance Mobile Developer</div>
+          <div class="exp-panel-co">Self-employed · Remote</div>
+          <p class="exp-panel-desc">Delivering custom Flutter mobile applications for small businesses across e-commerce, hospitality, and services sectors.</p>
+          <ul class="exp-bullets">
+            <li>Integrated Stripe, PayFast, and PayPal payment gateways into live apps</li>
+            <li>Built and deployed Firebase-backed mobile platforms for real clients</li>
+            <li>Maintained clean codebases with ongoing post-launch support</li>
+          </ul>
+        </div>
+
+        <div class="exp-panel" id="exp-mulanga">
+          <div class="exp-panel-date">2022 – Present</div>
+          <div class="exp-panel-role">Founder &amp; Creative Director</div>
+          <div class="exp-panel-co">Mulanga Productions</div>
+          <p class="exp-panel-desc">Founded a creative digital brand producing event flyers, promotional graphics, and digital media for businesses and events.</p>
+          <ul class="exp-bullets">
+            <li>Client communication, visual branding, and creative problem solving</li>
+            <li>Event flyers, social media graphics, and digital media production</li>
+          </ul>
+        </div>
+
+        <div class="exp-panel" id="exp-church">
+          <div class="exp-panel-date">2021 – Present</div>
+          <div class="exp-panel-role">Media Team Member</div>
+          <div class="exp-panel-co">Church Media Department</div>
+          <p class="exp-panel-desc">Producing graphic design and digital media content for church programmes, youth events, and community outreach.</p>
+          <ul class="exp-bullets">
+            <li>Design and production of visual content for church communications</li>
+            <li>Team collaboration and project coordination</li>
+          </ul>
+        </div>
+
+        <div class="exp-panel" id="exp-data">
+          <div class="exp-panel-date">2025 – Present</div>
+          <div class="exp-panel-role">Data &amp; Reporting Analyst</div>
+          <div class="exp-panel-co">Community Organisation · Volunteer</div>
+          <p class="exp-panel-desc">Building Excel dashboards and Power BI reports to visualise programme attendance and community impact metrics.</p>
+          <ul class="exp-bullets">
+            <li>Applied Python (pandas) for data cleaning and statistical summaries</li>
+            <li>Built Power BI dashboards enabling data-informed leadership decisions</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     PROJECTS  (moved after Experience)
+═══════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:3rem;">
+      <div class="eyebrow reveal">Work</div>
+      <h2 class="display-title reveal rd1">Featured <em>projects.</em></h2>
+      <p class="lead reveal rd2">Production apps with real payment integrations, live users, and scalable architecture.</p>
+    </div>
+
+    <div class="filter-row reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="flutter">Flutter</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="uiux">UI/UX</button>
+    </div>
+
+    <div class="projects-bento" id="projectsGrid">
+
+      <!-- ── PreXpiry ── -->
+      <div class="proj-card reveal" data-category="web" data-project="prexpiry">
+        <div class="proj-thumb">
+          <!--
+            PROJECT THUMBNAIL — PreXpiry
+            Replace src with a different screenshot if needed.
+          -->
+          <img class="proj-thumb-img" src="Assets/Prexpiry/pic3.png" alt="PreXpiry">
+          <span class="proj-cat-badge badge-web">Web</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">PreXpiry</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Pharmaceutical Inventory &amp; Expiry Tracking</div>
+          <p class="proj-desc">Inventory management for pharmacies — real-time expiry alerts, stock monitoring, and PayFast subscription billing.</p>
+          <div class="proj-stack">
+            <span class="proj-tag">JavaScript</span><span class="proj-tag">Firebase</span>
+            <span class="proj-tag">HTML</span><span class="proj-tag">CSS</span>
+            <span class="proj-tag">SQL</span><span class="proj-tag">PayFast</span>
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-links">
+            <a href="https://github.com/cyerMadzi" class="proj-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <button class="proj-detail" onclick="openProject('prexpiry')">Case Study <i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- ── GigHost ── -->
+      <div class="proj-card reveal rd1" data-category="flutter" data-project="gighost">
+        <div class="proj-thumb">
+          <!--
+            PROJECT THUMBNAIL — GigHost
+            Replace src with a different screenshot if needed.
+          -->
+          <img class="proj-thumb-img" src="Assets/GigHost/pic1.png" alt="GigHost">
+          <span class="proj-cat-badge badge-flutter">Flutter</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">GigHost</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Artist &amp; Talent Booking Marketplace · Ongoing</div>
+          <p class="proj-desc">Digital talent marketplace — artist profiles, booking workflows, and Stripe escrow payments for events.</p>
+          <div class="proj-stack">
+            <span class="proj-tag">Flutter</span><span class="proj-tag">Firebase</span>
+            <span class="proj-tag">Stripe API</span><span class="proj-tag">REST API</span>
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-links">
+            <a href="https://github.com/cyerMadzi" class="proj-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <button class="proj-detail" onclick="openProject('gighost')">Case Study <i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- ── Epic ── -->
+      <div class="proj-card reveal rd2" data-category="web" data-project="epic">
+        <div class="proj-thumb">
+          <!--
+            PROJECT THUMBNAIL — Epic
+            Replace src with a different screenshot if needed.
+          -->
+          <img class="proj-thumb-img" src="Assets/Epic/pic1.png" alt="Epic">
+          <span class="proj-cat-badge badge-web">Web</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">Epic</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Restaurant Reservation Platform</div>
+          <p class="proj-desc">Web reservation platform — browse, book, and pay deposits online via PayPal REST API.</p>
+          <div class="proj-stack">
+            <span class="proj-tag">HTML5/CSS3</span><span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">SQL</span><span class="proj-tag">PayPal API</span>
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-links">
+            <a href="https://github.com/cyerMadzi" class="proj-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <button class="proj-detail" onclick="openProject('epic')">Case Study <i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- ── WebCraft Studios (NEW) ── -->
+      <div class="proj-card reveal" data-category="web" data-project="webcraft">
+        <div class="proj-thumb">
+          <!--
+            PROJECT THUMBNAIL — WebCraft Studios
+            ──────────────────────────────────────────────
+            Add your screenshot:
+            1. Save your image e.g. Assets/WebCraft/pic1.png
+            2. Replace the placeholder div below with:
+               <img class="proj-thumb-img"
+                    src="Assets/WebCraft/pic1.png"
+                    alt="WebCraft Studios">
+            ──────────────────────────────────────────────
+          -->
+          <img class="proj-thumb-img" src="Assets/Webcraft/Pic2.png" alt="Epic">
+          <!-- <div class="proj-thumb-placeholder">
+            <i class="fa fa-globe"></i>
+            <p>Add your WebCraft screenshot</p>
+          </div> -->
+          <span class="proj-cat-badge badge-web">Web</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">WebCraft Studios</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Business &amp; E-Commerce Web Design Platform</div>
+          <p class="proj-desc">Professional web design agency platform — service packages, pricing, portfolio showcase, testimonials, WhatsApp integration, and an AI-powered enquiry chatbot. Deployed on Render.</p>
+          <div class="proj-stack">
+            <span class="proj-tag">HTML5</span><span class="proj-tag">CSS3</span>
+            <span class="proj-tag">JavaScript</span><span class="proj-tag">Firebase</span>
+            <span class="proj-tag">Render</span><span class="proj-tag">SEO</span>
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-links">
+            <a href="https://github.com/cyerMadzi" class="proj-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <!--
+              LIVE DEMO LINK — WebCraft
+              Replace # with your Render deployment URL
+            -->
+            <a href="#" class="proj-link" target="_blank">
+              <i class="fa fa-arrow-up-right-from-square"></i> Live Site
+            </a>
+          </div>
+          <button class="proj-detail" onclick="openProject('webcraft')">Case Study <i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- ── SkillBridge — COMING SOON ── -->
+      <!--
+        COMING SOON CARD — SkillBridge
+        ──────────────────────────────────────────────
+        The class "proj-card-coming-soon" applied below:
+          • blurs the card content (CSS filter: blur)
+          • shows the "Coming Soon" overlay ribbon
+          • the card is still clickable — clicking it
+            triggers showComingSoonToast() in script.js
+        When you're ready to launch SkillBridge:
+          1. Remove the class  proj-card-coming-soon
+          2. Remove the .coming-soon-overlay div
+          3. Add your real screenshot in .proj-thumb
+      -->
+      <div class="proj-card proj-card-coming-soon reveal rd1" data-category="fullstack" data-project="skillbridge">
+        <div class="coming-soon-overlay">
+          <div class="coming-soon-badge">
+            <i class="fa fa-clock"></i> Coming Soon
+          </div>
+        </div>
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">
+            <i class="fa fa-handshake"></i>
+            <p>In development</p>
+          </div>
+          <span class="proj-cat-badge badge-fullstack">Full-Stack</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">SkillBridge</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Freelance Services Marketplace</div>
+          <p class="proj-desc">P2P freelance platform — real-time chat, milestone management, and Stripe Connect split payments.</p>
+          <div class="proj-stack">
+            <span class="proj-tag">Flutter</span><span class="proj-tag">Firebase</span>
+            <span class="proj-tag">Stripe Connect</span>
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-links">
+            <span class="proj-link" style="opacity:0.4; cursor:default;">
+              <i class="fa fa-lock"></i> Private
+            </span>
+          </div>
+          <button class="proj-detail" onclick="openProject('skillbridge')">
+            Coming Soon <i class="fa fa-clock"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ── TrackIt — COMING SOON ── -->
+      <!--
+        COMING SOON CARD — TrackIt
+        ──────────────────────────────────────────────
+        Same pattern as SkillBridge above.
+        When ready to launch:
+          1. Remove class  proj-card-coming-soon
+          2. Remove .coming-soon-overlay div
+          3. Add your real screenshot
+      -->
+      <div class="proj-card proj-card-coming-soon reveal rd2" data-category="flutter" data-project="trackit">
+        <div class="coming-soon-overlay">
+          <div class="coming-soon-badge">
+            <i class="fa fa-clock"></i> Coming Soon
+          </div>
+        </div>
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">
+            <i class="fa fa-wallet"></i>
+            <p>In development</p>
+          </div>
+          <span class="proj-cat-badge badge-flutter">Flutter</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">TrackIt</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Personal Finance &amp; Budget Tracker</div>
+          <p class="proj-desc">Budgeting app — expense categorisation, spending insights, and Python-powered Power BI report exports.</p>
+          <div class="proj-stack">
+            <span class="proj-tag">Flutter</span><span class="proj-tag">Firebase</span>
+            <span class="proj-tag">Python</span><span class="proj-tag">Power BI</span>
+          </div>
+        </div>
+        <div class="proj-footer">
+          <div class="proj-links">
+            <span class="proj-link" style="opacity:0.4; cursor:default;">
+              <i class="fa fa-lock"></i> Private
+            </span>
+          </div>
+          <button class="proj-detail" onclick="openProject('trackit')">
+            Coming Soon <i class="fa fa-clock"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ── GigHost UI/UX phone mockup ── -->
+      <div class="proj-card reveal" data-category="uiux" data-project="gighost">
+        <div class="uiux-phone-wrap">
+          <span class="proj-cat-badge badge-uiux">UI/UX</span>
+          <div class="uiux-phone">
+            <div class="uiux-phone-notch"></div>
+            <div class="uiux-phone-screen">
+              <!--
+                PHONE MOCKUP SCREEN — GigHost
+                Replace src with the screen you want shown in the mockup.
+              -->
+              <img src="Assets/GigHost/pic4.png" alt="GigHost app screen">
+            </div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">GigHost</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Booking App · UI/UX · Ongoing</div>
+          <p class="proj-desc">Artist booking flow, profiles, and chat screens designed for a clean marketplace mobile experience.</p>
+        </div>
+        <div class="proj-footer">
+          <span class="proj-link" style="cursor:default;"><i class="fa fa-mobile-screen"></i> Mobile UI</span>
+          <button class="proj-detail" onclick="openProject('gighost')">View all screens <i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- ── PreXpiry browser UI/UX mockup ── -->
+      <div class="proj-card reveal rd1" data-category="uiux" data-project="prexpiry">
+        <div class="uiux-browser-wrap">
+          <span class="proj-cat-badge badge-uiux">UI/UX</span>
+          <div class="uiux-browser">
+            <div class="uiux-browser-bar">
+              <span class="uiux-browser-dot dot-red"></span>
+              <span class="uiux-browser-dot dot-yellow"></span>
+              <span class="uiux-browser-dot dot-green"></span>
+            </div>
+            <div class="uiux-browser-screen">
+              <!--
+                BROWSER MOCKUP SCREEN — PreXpiry
+                Replace src with the screen you want shown inside the browser frame.
+              -->
+              <img src="Assets/Prexpiry/pic3.png" alt="PreXpiry website screen">
+            </div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-header">
+            <div class="proj-title">PreXpiry</div>
+            <i class="fa fa-arrow-up-right proj-arrow-icon"></i>
+          </div>
+          <div class="proj-subtitle">Website · UI/UX</div>
+          <p class="proj-desc">Inventory dashboard, expiry alerts, and stock screens designed for fast, at-a-glance pharmacy management.</p>
+        </div>
+        <div class="proj-footer">
+          <span class="proj-link" style="cursor:default;"><i class="fa fa-display"></i> Web UI</span>
+          <button class="proj-detail" onclick="openProject('prexpiry')">View all screens <i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════ PROJECT MODAL ═══════════════ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="projectModal">
+    <button class="modal-close" onclick="closeProjectModal()"><i class="fa fa-xmark"></i></button>
+
+    <!-- Hero image area — populated by script.js -->
+    <div class="modal-hero" id="modalHero">
+      <div class="modal-hero-placeholder">
+        <i class="fa fa-image" id="modalIcon"></i>
+        <p>Add your project screenshot</p>
+      </div>
+    </div>
+
+    <!-- Gallery tab strip — built dynamically by script.js -->
+    <div class="modal-gal" id="modalGal"></div>
+
+    <div class="modal-body">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title"    id="modalTitle">—</div>
+          <div class="modal-subtitle" id="modalSubtitle">—</div>
+        </div>
+        <div class="modal-links-row">
+          <a href="#" class="modal-lnk" id="modalGithub" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="#" class="modal-lnk modal-lnk-primary" id="modalDemo" target="_blank">
+            <i class="fa fa-arrow-up-right-from-square"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <p class="modal-desc" id="modalDesc"></p>
+
+      <!-- Demo video — populated by script.js -->
+      <div class="modal-video">
+        <div class="video-ph">
+          <i class="fa fa-circle-play"></i>
+          <p>Add your demo video — update videoSrc in script.js</p>
+        </div>
+      </div>
+
+      <div class="modal-section">Key Features</div>
+      <ul class="modal-feats" id="modalFeats"></ul>
+
+      <div class="modal-section" style="margin-top:1.5rem;">Tech Stack</div>
+      <div class="modal-tags" id="modalTags"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SKILLS  (moved after Projects)
+═══════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:3rem;">
+      <div class="eyebrow reveal">Capabilities</div>
+      <h2 class="display-title reveal rd1">Skills &amp; <em>expertise.</em></h2>
+    </div>
+
+    <!-- ── TECH STACK TABLE (languages / frameworks / tools / design) ── -->
+    <div class="stack-showcase reveal">
+      <div class="stack-row-label">My full technology stack at a glance</div>
+      <div class="stack-table">
+
+        <!-- Column 1: Languages -->
+        <div class="stack-col">
+          <div class="stack-col-header">
+            <div class="stack-col-icon icon-purple">
+              <i class="fa fa-code"></i>
+            </div>
+            <div>
+              <div class="stack-col-num">01</div>
+              <div class="stack-col-title">Languages</div>
+            </div>
+          </div>
+          <ul class="stack-list">
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">Dart</span>          <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">JavaScript</span>    <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">HTML5</span>         <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">CSS3</span>          <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">SQL</span>           <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">Python</span>        <span class="stack-level level-growing">Growing</span></li>
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">Java</span>          <span class="stack-level level-familiar">Familiar</span></li>
+            <li class="stack-item"><span class="stack-dot dot-purple"></span><span class="stack-name">C++</span>           <span class="stack-level level-familiar">Familiar</span></li>
+          </ul>
+        </div>
+
+        <div class="stack-divider"></div>
+
+        <!-- Column 2: Frameworks & Libraries -->
+        <div class="stack-col">
+          <div class="stack-col-header">
+            <div class="stack-col-icon icon-teal">
+              <i class="fa fa-layer-group"></i>
+            </div>
+            <div>
+              <div class="stack-col-num">02</div>
+              <div class="stack-col-title">Frameworks &amp; Libraries</div>
+            </div>
+          </div>
+          <ul class="stack-list">
+            <li class="stack-item"><span class="stack-dot dot-teal"></span><span class="stack-name">Flutter</span>            <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-teal"></span><span class="stack-name">BLoC / Cubit</span>       <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-teal"></span><span class="stack-name">Firebase SDK</span>       <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-teal"></span><span class="stack-name">REST APIs</span>          <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-teal"></span><span class="stack-name">Clean Architecture</span> <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-teal"></span><span class="stack-name">pandas (Python)</span>    <span class="stack-level level-growing">Growing</span></li>
+            <li class="stack-item"><span class="stack-dot dot-teal"></span><span class="stack-name">Isar DB</span>            <span class="stack-level level-familiar">Familiar</span></li>
+          </ul>
+        </div>
+
+        <div class="stack-divider"></div>
+
+        <!-- Column 3: Tools & Platforms -->
+        <div class="stack-col">
+          <div class="stack-col-header">
+            <div class="stack-col-icon icon-coral">
+              <i class="fa fa-screwdriver-wrench"></i>
+            </div>
+            <div>
+              <div class="stack-col-num">03</div>
+              <div class="stack-col-title">Tools &amp; Platforms</div>
+            </div>
+          </div>
+          <ul class="stack-list">
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">Git &amp; GitHub</span>   <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">Stripe API</span>        <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">PayFast Gateway</span>   <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">PayPal REST API</span>   <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">Render (Deployment)</span><span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">Microsoft Excel</span>  <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">Power BI</span>         <span class="stack-level level-growing">Growing</span></li>
+            <li class="stack-item"><span class="stack-dot dot-coral"></span><span class="stack-name">Agile / Scrum</span>    <span class="stack-level level-familiar">Familiar</span></li>
+          </ul>
+        </div>
+
+        <div class="stack-divider"></div>
+
+        <!-- Column 4: Design & Creative -->
+        <div class="stack-col">
+          <div class="stack-col-header">
+            <div class="stack-col-icon icon-sand">
+              <i class="fa fa-pen-nib"></i>
+            </div>
+            <div>
+              <div class="stack-col-num">04</div>
+              <div class="stack-col-title">Design &amp; Creative</div>
+            </div>
+          </div>
+          <ul class="stack-list">
+            <li class="stack-item"><span class="stack-dot dot-sand"></span><span class="stack-name">Adobe Photoshop</span>   <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-sand"></span><span class="stack-name">UI/UX Design</span>     <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-sand"></span><span class="stack-name">Graphic Design</span>   <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-sand"></span><span class="stack-name">Branding &amp; Identity</span><span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-sand"></span><span class="stack-name">Event Posters</span>    <span class="stack-level level-strong">Strong</span></li>
+            <li class="stack-item"><span class="stack-dot dot-sand"></span><span class="stack-name">After Effects</span>    <span class="stack-level level-growing">Growing</span></li>
+          </ul>
+        </div>
+
+      </div><!-- end .stack-table -->
+
+      <div class="stack-legend">
+        <span class="legend-label">Proficiency:</span>
+        <span class="legend-item"><span class="legend-dot dot-strong"></span> Strong</span>
+        <span class="legend-item"><span class="legend-dot dot-growing"></span> Growing</span>
+        <span class="legend-item"><span class="legend-dot dot-familiar"></span> Familiar</span>
+      </div>
+    </div><!-- end .stack-showcase -->
+
+    <!-- Skill category tiles -->
+    <div class="skills-bento">
+      <div class="skill-tile reveal">
+        <div class="skill-tile-icon icon-purple"><i class="fa fa-mobile-screen"></i></div>
+        <div class="skill-tile-label">Mobile &amp; Development</div>
+        <div class="skill-tile-title">Software</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Flutter</span><span class="skill-pill">Dart</span>
+          <span class="skill-pill">JavaScript</span><span class="skill-pill">Java</span>
+          <span class="skill-pill">C++</span><span class="skill-pill">Python</span>
+          <span class="skill-pill">HTML5</span><span class="skill-pill">CSS3</span>
+          <span class="skill-pill">BLoC / Cubit</span><span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">Firebase</span>
+        </div>
+      </div>
+      <div class="skill-tile reveal rd1">
+        <div class="skill-tile-icon icon-teal"><i class="fa fa-cloud"></i></div>
+        <div class="skill-tile-label">Cloud &amp; Back-End</div>
+        <div class="skill-tile-title">Infrastructure</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Firebase</span><span class="skill-pill">SQL</span>
+          <span class="skill-pill">Relational DBs</span><span class="skill-pill">Git &amp; GitHub</span>
+          <span class="skill-pill">Stripe API</span><span class="skill-pill">PayFast</span>
+          <span class="skill-pill">PayPal REST</span><span class="skill-pill">Render</span>
+        </div>
+      </div>
+      <div class="skill-tile reveal rd2">
+        <div class="skill-tile-icon icon-coral"><i class="fa fa-shield-halved"></i></div>
+        <div class="skill-tile-label">Cybersecurity</div>
+        <div class="skill-tile-title">Security</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Security Fundamentals</span>
+          <span class="skill-pill">Networking</span><span class="skill-pill">Auth Flows</span>
+          <span class="skill-pill">Data Protection</span><span class="skill-pill">Secure Checkout</span>
+        </div>
+      </div>
+      <div class="skill-tile reveal rd3">
+        <div class="skill-tile-icon icon-sand"><i class="fa fa-pen-nib"></i></div>
+        <div class="skill-tile-label">Creative &amp; Design</div>
+        <div class="skill-tile-title">Design</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Adobe Photoshop</span>
+          <span class="skill-pill">After Effects</span><span class="skill-pill">Graphic Design</span>
+          <span class="skill-pill">Branding</span><span class="skill-pill">Power BI</span>
+          <span class="skill-pill">Excel</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CERTIFICATES
+═══════════════════════════════════════════ -->
+<section id="certificates">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:3rem;">
+      <div class="eyebrow reveal">Credentials</div>
+      <h2 class="display-title reveal rd1">Education &amp; <em>certifications.</em></h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <span class="cert-num">01</span>
+        <div class="cert-icon cert-icon-purple"><i class="fa fa-graduation-cap"></i></div>
+        <div class="cert-title">BSc Computer Science &amp; Mathematics</div>
+        <div class="cert-issuer">University of South Africa (UNISA)</div>
+        <div class="cert-year">2024 – Present · Second Year</div>
+      </div>
+      <div class="cert-card reveal rd1">
+        <span class="cert-num">02</span>
+        <div class="cert-icon cert-icon-teal"><i class="fa fa-laptop-code"></i></div>
+        <div class="cert-title">Full Stack Software Development Certificate</div>
+        <div class="cert-issuer">First National Bank App Academy</div>
+        <div class="cert-year">2025 · 6-Month Programme</div>
+      </div>
+      <div class="cert-card reveal rd2">
+        <span class="cert-num">03</span>
+        <div class="cert-icon cert-icon-yellow"><i class="fa fa-chart-line"></i></div>
+        <div class="cert-title">Data Science Program</div>
+        <div class="cert-issuer">ALX Africa</div>
+        <div class="cert-year">2025 – Present · 3rd Month</div>
+      </div>
+      <div class="cert-card reveal rd3">
+        <span class="cert-num">04</span>
+        <div class="cert-icon cert-icon-coral"><i class="fa fa-award"></i></div>
+        <div class="cert-title">Software Engineering Foundations Program</div>
+        <div class="cert-issuer">ALX Africa</div>
+        <div class="cert-year">2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SERVICES
+═══════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:3rem;">
+      <div class="eyebrow reveal">Offerings</div>
+      <h2 class="display-title reveal rd1">What I <em>do.</em></h2>
+    </div>
+    <div class="services-bento">
+      <div class="svc-card reveal">
+        <span class="svc-num">01</span>
+        <i class="fa fa-mobile-screen svc-icon"></i>
+        <div class="svc-title">Flutter Development</div>
+        <p class="svc-desc">Cross-platform iOS &amp; Android apps with Flutter and Dart — clean architecture, BLoC state management, Firebase backends.</p>
+      </div>
+      <div class="svc-card reveal rd1">
+        <span class="svc-num">02</span>
+        <i class="fa fa-code svc-icon"></i>
+        <div class="svc-title">Full-Stack Web</div>
+        <p class="svc-desc">End-to-end web applications — HTML, CSS, JavaScript, SQL with responsive design and secure backend logic.</p>
+      </div>
+      <div class="svc-card reveal rd2">
+        <span class="svc-num">03</span>
+        <i class="fa fa-pen-ruler svc-icon"></i>
+        <div class="svc-title">Graphic Design</div>
+        <p class="svc-desc">Professional graphics, event flyers, social media content, and brand identity using Adobe Photoshop &amp; After Effects.</p>
+      </div>
+      <div class="svc-card reveal rd3">
+        <span class="svc-num">04</span>
+        <i class="fa fa-layer-group svc-icon"></i>
+        <div class="svc-title">UI/UX Design</div>
+        <p class="svc-desc">User-centred interfaces for mobile and web — clean layouts, intuitive navigation, and strong visual hierarchy.</p>
+      </div>
+      <div class="svc-card reveal rd4">
+        <span class="svc-num">05</span>
+        <i class="fa fa-credit-card svc-icon"></i>
+        <div class="svc-title">Payment Integration</div>
+        <p class="svc-desc">Secure payment gateway integrations — Stripe, PayFast, and PayPal REST API for mobile and web platforms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-bento reveal">
+      <div class="contact-left">
+        <div class="eyebrow" style="color:rgba(255,255,255,0.3); margin-bottom:1.25rem;">
+          <span style="background:rgba(255,255,255,0.2);width:18px;height:1px;display:inline-block;"></span>
+          Get In Touch
+        </div>
+        <h2 class="contact-headline">Have a<br>project<br>in <em>mind?</em></h2>
+        <p class="contact-body">Whether you need a Flutter app, a full-stack platform, or graphic design work — I'd love to connect.</p>
+        <div class="contact-rows">
+          <a href="mailto:Obvmulanga@gmail.com" class="contact-row"><i class="fa fa-envelope"></i> Obvmulanga@gmail.com</a>
+          <a href="tel:+27817622557"            class="contact-row"><i class="fa fa-phone"></i> +27 81 762 2557</a>
+          <a href="https://linkedin.com/in/mulanga-madzimbalala-a462a0242" class="contact-row" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/cyerMadzi" class="contact-row" target="_blank"><i class="fa-brands fa-github"></i> github.com/cyerMadzi</a>
+        </div>
+        <div class="social-bento">
+          <a href="https://github.com/cyerMadzi" class="soc-btn" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+          <a href="https://linkedin.com/in/mulanga-madzimbalala-a462a0242" class="soc-btn" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+          <a href="mailto:Obvmulanga@gmail.com"  class="soc-btn"><i class="fa fa-envelope"></i>Email</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form onsubmit="handleSubmit(event)">
+          <div class="cf-row">
+            <div class="cf-group"><label>First Name</label><input type="text"  placeholder="John" required></div>
+            <div class="cf-group"><label>Last Name</label> <input type="text"  placeholder="Doe"  required></div>
+          </div>
+          <div class="cf-group"><label>Email</label>  <input type="email" placeholder="john@example.com" required></div>
+          <div class="cf-group"><label>Subject</label><input type="text"  placeholder="Project inquiry..."></div>
+          <div class="cf-group"><label>Message</label><textarea placeholder="Tell me about your project..." required></textarea></div>
+          <div class="cf-submit">
+            <span class="cf-note">I respond within 24 hours.</span>
+            <button type="submit" class="btn-submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+          </div>
+        </form>
+        <div class="form-ok" id="formOk"><i class="fa fa-circle-check"></i> Message sent! I'll be in touch soon.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <span class="footer-logo">Mulanga<em>.</em></span>
+      <div class="footer-sub">Software Developer · Designer · South Africa</div>
+    </div>
+    <div style="display:flex;gap:4rem;">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="https://github.com/cyerMadzi" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/mulanga-madzimbalala-a462a0242" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:Obvmulanga@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Mulanga Madzimbalala. All rights reserved.</span>
+    <span class="footer-copy">Built with clean code.</span>
+  </div>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="fa fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
